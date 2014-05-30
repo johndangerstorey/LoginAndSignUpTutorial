@@ -51,7 +51,7 @@
     [self.logInView addSubview:taglineLabel];
     
     
-    // twitter signup button - ? - How do I get this to do the same thing as the button below?
+    // twitter signup button - ? - How do I get this to do the same thing as the button below.  I tried looking for where self.logInView.twitterButton is located but couldn't find any clues.
     
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
