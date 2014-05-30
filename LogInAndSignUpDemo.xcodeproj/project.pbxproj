@@ -22,11 +22,6 @@
 		74366EC7158AAF7E00A17D8A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EC1158AAF7E00A17D8A /* Security.framework */; };
 		74366EC8158AAF7E00A17D8A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EC2158AAF7E00A17D8A /* SystemConfiguration.framework */; };
 		74366ECA158AB00E00A17D8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EC9158AB00E00A17D8A /* QuartzCore.framework */; };
-		74366EDF158AB49300A17D8A /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EDE158AB49300A17D8A /* DemoTableViewController.m */; };
-		74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EE5158AC82C00A17D8A /* DefaultSettingsViewController.m */; };
-		74366EE8158AC82C00A17D8A /* DefaultSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EE6158AC82C00A17D8A /* DefaultSettingsViewController.xib */; };
-		74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EF2158AF2D300A17D8A /* PropertyConfigViewController.m */; };
-		74366EF5158AF2D300A17D8A /* PropertyConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EF3158AF2D300A17D8A /* PropertyConfigViewController.xib */; };
 		74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EF8158B95C800A17D8A /* SubclassConfigViewController.m */; };
 		74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */; };
 		74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F02158B973C00A17D8A /* MyLogInViewController.m */; };
@@ -57,6 +52,8 @@
 		F5228FA81938F5D400D0160A /* MuseoSansRounded-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */; };
 		F5228FA91938F5D400D0160A /* MuseoSansRounded-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */; };
 		F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */; };
+		F5228FAE193900DA00D0160A /* MyPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5228FAC193900DA00D0160A /* MyPlayViewController.m */; };
+		F5228FAF193900DA00D0160A /* MyPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5228FAD193900DA00D0160A /* MyPlayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,14 +76,6 @@
 		74366EC1158AAF7E00A17D8A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		74366EC2158AAF7E00A17D8A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		74366EC9158AB00E00A17D8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		74366EDD158AB49300A17D8A /* DemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewController.h; sourceTree = "<group>"; };
-		74366EDE158AB49300A17D8A /* DemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewController.m; sourceTree = "<group>"; };
-		74366EE4158AC82C00A17D8A /* DefaultSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSettingsViewController.h; sourceTree = "<group>"; };
-		74366EE5158AC82C00A17D8A /* DefaultSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSettingsViewController.m; sourceTree = "<group>"; };
-		74366EE6158AC82C00A17D8A /* DefaultSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSettingsViewController.xib; sourceTree = "<group>"; };
-		74366EF1158AF2D300A17D8A /* PropertyConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyConfigViewController.h; sourceTree = "<group>"; };
-		74366EF2158AF2D300A17D8A /* PropertyConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyConfigViewController.m; sourceTree = "<group>"; };
-		74366EF3158AF2D300A17D8A /* PropertyConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyConfigViewController.xib; sourceTree = "<group>"; };
 		74366EF7158B95C800A17D8A /* SubclassConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubclassConfigViewController.h; sourceTree = "<group>"; };
 		74366EF8158B95C800A17D8A /* SubclassConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubclassConfigViewController.m; sourceTree = "<group>"; };
 		74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassConfigViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +108,9 @@
 		F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-300.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-300.otf"; sourceTree = "<group>"; };
 		F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-500.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-500.otf"; sourceTree = "<group>"; };
 		F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-900.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-900.otf"; sourceTree = "<group>"; };
+		F5228FAB193900DA00D0160A /* MyPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlayViewController.h; sourceTree = "<group>"; };
+		F5228FAC193900DA00D0160A /* MyPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlayViewController.m; sourceTree = "<group>"; };
+		F5228FAD193900DA00D0160A /* MyPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,10 +216,6 @@
 			children = (
 				74366EB5158AAE1000A17D8A /* AppDelegate.h */,
 				74366EB6158AAE1000A17D8A /* AppDelegate.m */,
-				74366EDD158AB49300A17D8A /* DemoTableViewController.h */,
-				74366EDE158AB49300A17D8A /* DemoTableViewController.m */,
-				74366EEF158AF29000A17D8A /* Default Settings */,
-				74366EF0158AF29A00A17D8A /* Property Customization */,
 				74366EF6158B959200A17D8A /* Subclass Customization */,
 			);
 			path = LogInAndSignUpDemo;
@@ -249,36 +237,27 @@
 			path = LogInAndSignUpDemo;
 			sourceTree = "<group>";
 		};
-		74366EEF158AF29000A17D8A /* Default Settings */ = {
-			isa = PBXGroup;
-			children = (
-				74366EE4158AC82C00A17D8A /* DefaultSettingsViewController.h */,
-				74366EE5158AC82C00A17D8A /* DefaultSettingsViewController.m */,
-				74366EE6158AC82C00A17D8A /* DefaultSettingsViewController.xib */,
-			);
-			name = "Default Settings";
-			sourceTree = "<group>";
-		};
-		74366EF0158AF29A00A17D8A /* Property Customization */ = {
-			isa = PBXGroup;
-			children = (
-				74366EF1158AF2D300A17D8A /* PropertyConfigViewController.h */,
-				74366EF2158AF2D300A17D8A /* PropertyConfigViewController.m */,
-				74366EF3158AF2D300A17D8A /* PropertyConfigViewController.xib */,
-			);
-			name = "Property Customization";
-			sourceTree = "<group>";
-		};
 		74366EF6158B959200A17D8A /* Subclass Customization */ = {
 			isa = PBXGroup;
 			children = (
 				74366EF7158B95C800A17D8A /* SubclassConfigViewController.h */,
 				74366EF8158B95C800A17D8A /* SubclassConfigViewController.m */,
-				74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */,
+				F5228FAB193900DA00D0160A /* MyPlayViewController.h */,
+				F5228FAC193900DA00D0160A /* MyPlayViewController.m */,
 				74366F01158B973C00A17D8A /* MyLogInViewController.h */,
 				74366F02158B973C00A17D8A /* MyLogInViewController.m */,
+				F5228FB0193900F100D0160A /* XIB */,
 			);
 			name = "Subclass Customization";
+			sourceTree = "<group>";
+		};
+		F5228FB0193900F100D0160A /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				F5228FAD193900DA00D0160A /* MyPlayViewController.xib */,
+				74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */,
+			);
+			name = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +315,6 @@
 				F5228FA91938F5D400D0160A /* MuseoSansRounded-500.otf in Resources */,
 				F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */,
 				74366EB1158AAE1000A17D8A /* InfoPlist.strings in Resources */,
-				74366EE8158AC82C00A17D8A /* DefaultSettingsViewController.xib in Resources */,
-				74366EF5158AF2D300A17D8A /* PropertyConfigViewController.xib in Resources */,
 				74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */,
 				747F007615951A58000F601E /* Exit.png in Resources */,
 				747F007715951A58000F601E /* ExitDown.png in Resources */,
@@ -345,6 +322,7 @@
 				747F007915951A58000F601E /* FacebookDown.png in Resources */,
 				747F007A15951A58000F601E /* LoginFieldBG.png in Resources */,
 				747F007B15951A58000F601E /* Logo.png in Resources */,
+				F5228FAF193900DA00D0160A /* MyPlayViewController.xib in Resources */,
 				747F007C15951A58000F601E /* MainBG.png in Resources */,
 				747F007D15951A58000F601E /* SignUp.png in Resources */,
 				747F007E15951A58000F601E /* SignUpDown.png in Resources */,
@@ -366,11 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5228FAE193900DA00D0160A /* MyPlayViewController.m in Sources */,
 				74366EB3158AAE1000A17D8A /* main.m in Sources */,
 				74366EB7158AAE1000A17D8A /* AppDelegate.m in Sources */,
-				74366EDF158AB49300A17D8A /* DemoTableViewController.m in Sources */,
-				74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */,
-				74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */,
 				74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */,
 				74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */,
 			);

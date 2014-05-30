@@ -8,7 +8,7 @@
 
 #import "SubclassConfigViewController.h"
 #import "MyLogInViewController.h"
-
+#import "MyPlayViewController.h"
 
 @implementation SubclassConfigViewController
 
@@ -31,11 +31,15 @@
     if (![PFUser currentUser]) {        
         // Customize the Log In View Controller
         MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
+        logInViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         logInViewController.delegate = self;
         logInViewController.facebookPermissions = @[@"friends_about_me"];
         logInViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton | PFLogInFieldsDismissButton;
         // Present Log In View Controller
-        [self presentViewController:logInViewController animated:NO completion:NULL];
+        [self presentViewController:logInViewController animated:YES completion:NULL];
+    } else {
+        MyPlayViewController *playViewController = [MyPlayViewController new];
+        [self presentViewController:playViewController animated:YES completion:NULL];
     }
 }
 
