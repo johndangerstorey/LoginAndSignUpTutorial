@@ -10,6 +10,8 @@
 
 @interface MyPlayViewController ()
 
+@property (nonatomic, strong) IBOutlet UILabel *userName;
+
 @end
 
 @implementation MyPlayViewController
@@ -26,6 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
+    
+    // NEXT need to initialize UILabel and then push it to view using this code:
+//    self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
     // Do any additional setup after loading the view from its nib.
 }
 

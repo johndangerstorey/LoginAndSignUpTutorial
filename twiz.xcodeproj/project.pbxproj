@@ -25,18 +25,7 @@
 		74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EF8158B95C800A17D8A /* SubclassConfigViewController.m */; };
 		74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */; };
 		74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F02158B973C00A17D8A /* MyLogInViewController.m */; };
-		747F007615951A58000F601E /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006A15951A58000F601E /* Exit.png */; };
-		747F007715951A58000F601E /* ExitDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006B15951A58000F601E /* ExitDown.png */; };
-		747F007815951A58000F601E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006C15951A58000F601E /* Facebook.png */; };
-		747F007915951A58000F601E /* FacebookDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006D15951A58000F601E /* FacebookDown.png */; };
-		747F007A15951A58000F601E /* LoginFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006E15951A58000F601E /* LoginFieldBG.png */; };
-		747F007B15951A58000F601E /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006F15951A58000F601E /* Logo.png */; };
 		747F007C15951A58000F601E /* MainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007015951A58000F601E /* MainBG.png */; };
-		747F007D15951A58000F601E /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007115951A58000F601E /* SignUp.png */; };
-		747F007E15951A58000F601E /* SignUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007215951A58000F601E /* SignUpDown.png */; };
-		747F007F15951A58000F601E /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007315951A58000F601E /* SignUpFieldBG.png */; };
-		747F008015951A58000F601E /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007415951A58000F601E /* Twitter.png */; };
-		747F008115951A58000F601E /* TwitterDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007515951A58000F601E /* TwitterDown.png */; };
 		C4BBB7B516FD2ABC003CA3F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */; };
 		C4BBB7B616FD2ABC003CA3F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */; };
 		C4BBB7BA16FD2B0F003CA3F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -59,14 +48,14 @@
 /* Begin PBXFileReference section */
 		143C2CDC18203DBB00DFCD05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		143C2CDE182058B900DFCD05 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInAndSignUpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74366EA2158AAE0F00A17D8A /* twiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74366EA6158AAE0F00A17D8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		74366EA8158AAE0F00A17D8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		74366EAA158AAE0F00A17D8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		74366EAE158AAE1000A17D8A /* LogInAndSignUpDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogInAndSignUpDemo-Info.plist"; sourceTree = "<group>"; };
+		74366EAE158AAE1000A17D8A /* twiz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twiz-Info.plist"; sourceTree = "<group>"; };
 		74366EB0158AAE1000A17D8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		74366EB2158AAE1000A17D8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		74366EB4158AAE1000A17D8A /* LogInAndSignUpDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogInAndSignUpDemo-Prefix.pch"; sourceTree = "<group>"; };
+		74366EB4158AAE1000A17D8A /* twiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "twiz-Prefix.pch"; sourceTree = "<group>"; };
 		74366EB5158AAE1000A17D8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74366EB6158AAE1000A17D8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74366EBD158AAF7E00A17D8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -81,18 +70,7 @@
 		74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassConfigViewController.xib; sourceTree = "<group>"; };
 		74366F01158B973C00A17D8A /* MyLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogInViewController.h; sourceTree = "<group>"; };
 		74366F02158B973C00A17D8A /* MyLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogInViewController.m; sourceTree = "<group>"; };
-		747F006A15951A58000F601E /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
-		747F006B15951A58000F601E /* ExitDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitDown.png; sourceTree = "<group>"; };
-		747F006C15951A58000F601E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
-		747F006D15951A58000F601E /* FacebookDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookDown.png; sourceTree = "<group>"; };
-		747F006E15951A58000F601E /* LoginFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginFieldBG.png; sourceTree = "<group>"; };
-		747F006F15951A58000F601E /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		747F007015951A58000F601E /* MainBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainBG.png; sourceTree = "<group>"; };
-		747F007115951A58000F601E /* SignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUp.png; sourceTree = "<group>"; };
-		747F007215951A58000F601E /* SignUpDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpDown.png; sourceTree = "<group>"; };
-		747F007315951A58000F601E /* SignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpFieldBG.png; sourceTree = "<group>"; };
-		747F007415951A58000F601E /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
-		747F007515951A58000F601E /* TwitterDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterDown.png; sourceTree = "<group>"; };
 		C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -150,18 +128,7 @@
 				C4BBB7C016FD2D73003CA3F7 /* Default.png */,
 				C4BBB7BF16FD2D73003CA3F7 /* Default@2x.png */,
 				C4BBB7C116FD2D73003CA3F7 /* Default-568h@2x.png */,
-				747F006A15951A58000F601E /* Exit.png */,
-				747F006B15951A58000F601E /* ExitDown.png */,
-				747F006C15951A58000F601E /* Facebook.png */,
-				747F006D15951A58000F601E /* FacebookDown.png */,
-				747F006E15951A58000F601E /* LoginFieldBG.png */,
-				747F006F15951A58000F601E /* Logo.png */,
 				747F007015951A58000F601E /* MainBG.png */,
-				747F007115951A58000F601E /* SignUp.png */,
-				747F007215951A58000F601E /* SignUpDown.png */,
-				747F007315951A58000F601E /* SignUpFieldBG.png */,
-				747F007415951A58000F601E /* Twitter.png */,
-				747F007515951A58000F601E /* TwitterDown.png */,
 			);
 			name = Assets;
 			path = LogInAndSignUpDemo;
@@ -170,7 +137,7 @@
 		74366E97158AAE0F00A17D8A = {
 			isa = PBXGroup;
 			children = (
-				74366EAC158AAE1000A17D8A /* LogInAndSignUpDemo */,
+				74366EAC158AAE1000A17D8A /* twiz files */,
 				741203C415900A3C00820BE9 /* Assets */,
 				74366EAD158AAE1000A17D8A /* Supporting Files */,
 				74366EA5158AAE0F00A17D8A /* Frameworks */,
@@ -181,7 +148,7 @@
 		74366EA3158AAE0F00A17D8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */,
+				74366EA2158AAE0F00A17D8A /* twiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,13 +178,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		74366EAC158AAE1000A17D8A /* LogInAndSignUpDemo */ = {
+		74366EAC158AAE1000A17D8A /* twiz files */ = {
 			isa = PBXGroup;
 			children = (
 				74366EB5158AAE1000A17D8A /* AppDelegate.h */,
 				74366EB6158AAE1000A17D8A /* AppDelegate.m */,
-				74366EF6158B959200A17D8A /* Subclass Customization */,
+				74366EF6158B959200A17D8A /* Subclasses */,
 			);
+			name = "twiz files";
 			path = LogInAndSignUpDemo;
 			sourceTree = "<group>";
 		};
@@ -228,16 +196,16 @@
 				F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */,
 				F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */,
 				F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */,
-				74366EAE158AAE1000A17D8A /* LogInAndSignUpDemo-Info.plist */,
+				74366EAE158AAE1000A17D8A /* twiz-Info.plist */,
 				74366EAF158AAE1000A17D8A /* InfoPlist.strings */,
 				74366EB2158AAE1000A17D8A /* main.m */,
-				74366EB4158AAE1000A17D8A /* LogInAndSignUpDemo-Prefix.pch */,
+				74366EB4158AAE1000A17D8A /* twiz-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = LogInAndSignUpDemo;
 			sourceTree = "<group>";
 		};
-		74366EF6158B959200A17D8A /* Subclass Customization */ = {
+		74366EF6158B959200A17D8A /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
 				74366EF7158B95C800A17D8A /* SubclassConfigViewController.h */,
@@ -248,7 +216,7 @@
 				74366F02158B973C00A17D8A /* MyLogInViewController.m */,
 				F5228FB0193900F100D0160A /* XIB */,
 			);
-			name = "Subclass Customization";
+			name = Subclasses;
 			sourceTree = "<group>";
 		};
 		F5228FB0193900F100D0160A /* XIB */ = {
@@ -263,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74366EA1158AAE0F00A17D8A /* LogInAndSignUpDemo */ = {
+		74366EA1158AAE0F00A17D8A /* twiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "LogInAndSignUpDemo" */;
+			buildConfigurationList = 74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "twiz" */;
 			buildPhases = (
 				74366E9E158AAE0F00A17D8A /* Sources */,
 				74366E9F158AAE0F00A17D8A /* Frameworks */,
@@ -275,9 +243,9 @@
 			);
 			dependencies = (
 			);
-			name = LogInAndSignUpDemo;
+			name = twiz;
 			productName = LogInAndSignUpDemo;
-			productReference = 74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */;
+			productReference = 74366EA2158AAE0F00A17D8A /* twiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -288,7 +256,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "LogInAndSignUpDemo" */;
+			buildConfigurationList = 74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "twiz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -300,7 +268,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74366EA1158AAE0F00A17D8A /* LogInAndSignUpDemo */,
+				74366EA1158AAE0F00A17D8A /* twiz */,
 			);
 		};
 /* End PBXProject section */
@@ -316,19 +284,8 @@
 				F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */,
 				74366EB1158AAE1000A17D8A /* InfoPlist.strings in Resources */,
 				74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */,
-				747F007615951A58000F601E /* Exit.png in Resources */,
-				747F007715951A58000F601E /* ExitDown.png in Resources */,
-				747F007815951A58000F601E /* Facebook.png in Resources */,
-				747F007915951A58000F601E /* FacebookDown.png in Resources */,
-				747F007A15951A58000F601E /* LoginFieldBG.png in Resources */,
-				747F007B15951A58000F601E /* Logo.png in Resources */,
 				F5228FAF193900DA00D0160A /* MyPlayViewController.xib in Resources */,
 				747F007C15951A58000F601E /* MainBG.png in Resources */,
-				747F007D15951A58000F601E /* SignUp.png in Resources */,
-				747F007E15951A58000F601E /* SignUpDown.png in Resources */,
-				747F007F15951A58000F601E /* SignUpFieldBG.png in Resources */,
-				747F008015951A58000F601E /* Twitter.png in Resources */,
-				747F008115951A58000F601E /* TwitterDown.png in Resources */,
 				C4BBB7C216FD2D73003CA3F7 /* Default@2x.png in Resources */,
 				C4BBB7C316FD2D73003CA3F7 /* Default.png in Resources */,
 				C4BBB7C416FD2D73003CA3F7 /* Default-568h@2x.png in Resources */,
@@ -420,14 +377,14 @@
 					/Users/fjm/git/SampleAppsPrivate/LoginAndSignUpTutorial,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/LogInAndSignUpDemo-Prefix.pch";
-				INFOPLIST_FILE = "LogInAndSignUpDemo/LogInAndSignUpDemo-Info.plist";
+				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/twiz-Prefix.pch";
+				INFOPLIST_FILE = "LogInAndSignUpDemo/twiz-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = twiz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -441,14 +398,14 @@
 					/Users/fjm/git/SampleAppsPrivate/LoginAndSignUpTutorial,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/LogInAndSignUpDemo-Prefix.pch";
-				INFOPLIST_FILE = "LogInAndSignUpDemo/LogInAndSignUpDemo-Info.plist";
+				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/twiz-Prefix.pch";
+				INFOPLIST_FILE = "LogInAndSignUpDemo/twiz-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = twiz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "LogInAndSignUpDemo" */ = {
+		74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "twiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74366EB8158AAE1000A17D8A /* Debug */,
@@ -465,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "LogInAndSignUpDemo" */ = {
+		74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "twiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74366EBB158AAE1000A17D8A /* Debug */,

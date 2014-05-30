@@ -36,8 +36,9 @@
         logInViewController.fields =   PFLogInFieldsTwitter;        // Present Log In View Controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
     } else {
+        // works only if you login, then close app and login, not after information is actually sent to twitter, then redirects you back up to top 'viewWillAppear' method
         MyPlayViewController *playViewController = [MyPlayViewController new];
-        [self presentViewController:playViewController animated:YES completion:NULL];
+        [self presentViewController:playViewController animated:NO completion:NULL];
     }
 
 }
