@@ -6,6 +6,6 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 
-@interface DemoTableViewController : UIViewController
+@interface MainViewController : UIViewController
 
 @end

@@ -8,7 +8,7 @@
 
 #import "SubclassConfigViewController.h"
 #import "MyLogInViewController.h"
-#import "MySignUpViewController.h"
+
 
 @implementation SubclassConfigViewController
 
@@ -34,15 +34,8 @@
         logInViewController.delegate = self;
         logInViewController.facebookPermissions = @[@"friends_about_me"];
         logInViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton | PFLogInFieldsDismissButton;
-        
-        // Customize the Sign Up View Controller
-        MySignUpViewController *signUpViewController = [[MySignUpViewController alloc] init];
-        signUpViewController.delegate = self;
-        signUpViewController.fields = PFSignUpFieldsDefault | PFSignUpFieldsAdditional;
-        logInViewController.signUpController = signUpViewController;
-        
         // Present Log In View Controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
+        [self presentViewController:logInViewController animated:NO completion:NULL];
     }
 }
 

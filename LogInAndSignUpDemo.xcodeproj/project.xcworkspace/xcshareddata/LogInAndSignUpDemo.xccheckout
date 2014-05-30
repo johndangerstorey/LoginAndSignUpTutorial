@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>789002C4-0EDA-4C0D-A076-8BE4EE7DE7C1</string>
+	<string>1FC09F2C-84D4-4BBA-8BD4-8267CCEC58E0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LogInAndSignUpDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4D837C87-2587-4361-A45C-413B0185A413</key>
-		<string>ssh://github.com/ParsePlatform/SampleAppsPrivate.git</string>
+		<key>73E5682F-C861-41AD-A84E-34C7BAF9D94A</key>
+		<string>https://github.com/johndangerstorey/LoginAndSignUpTutorial.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LoginAndSignUpTutorial/LogInAndSignUpDemo.xcodeproj/project.xcworkspace</string>
+	<string>LogInAndSignUpDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4D837C87-2587-4361-A45C-413B0185A413</key>
-		<string>../../..</string>
+		<key>73E5682F-C861-41AD-A84E-34C7BAF9D94A</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/ParsePlatform/SampleAppsPrivate.git</string>
+	<string>https://github.com/johndangerstorey/LoginAndSignUpTutorial.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4D837C87-2587-4361-A45C-413B0185A413</string>
+	<string>73E5682F-C861-41AD-A84E-34C7BAF9D94A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4D837C87-2587-4361-A45C-413B0185A413</string>
+			<string>73E5682F-C861-41AD-A84E-34C7BAF9D94A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SampleAppsPrivate</string>
+			<string>LoginAndSignUpTutorial</string>
 		</dict>
 	</array>
 </dict>

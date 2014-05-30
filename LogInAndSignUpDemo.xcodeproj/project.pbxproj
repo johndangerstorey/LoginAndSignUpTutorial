@@ -30,7 +30,6 @@
 		74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EF8158B95C800A17D8A /* SubclassConfigViewController.m */; };
 		74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */; };
 		74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F02158B973C00A17D8A /* MyLogInViewController.m */; };
-		74366F06158B975500A17D8A /* MySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F05158B975500A17D8A /* MySignUpViewController.m */; };
 		747F007615951A58000F601E /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006A15951A58000F601E /* Exit.png */; };
 		747F007715951A58000F601E /* ExitDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006B15951A58000F601E /* ExitDown.png */; };
 		747F007815951A58000F601E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F006C15951A58000F601E /* Facebook.png */; };
@@ -54,6 +53,10 @@
 		C4BBB7C416FD2D73003CA3F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BBB7C116FD2D73003CA3F7 /* Default-568h@2x.png */; };
 		C4FD613617286AC800F61563 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD613517286AC800F61563 /* Icon.png */; };
 		C4FD613817286ACD00F61563 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD613717286ACD00F61563 /* Icon@2x.png */; };
+		F5228FA71938F5D400D0160A /* MuseoSansRounded-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA31938F58500D0160A /* MuseoSansRounded-100.otf */; };
+		F5228FA81938F5D400D0160A /* MuseoSansRounded-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */; };
+		F5228FA91938F5D400D0160A /* MuseoSansRounded-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */; };
+		F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,8 +92,6 @@
 		74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassConfigViewController.xib; sourceTree = "<group>"; };
 		74366F01158B973C00A17D8A /* MyLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogInViewController.h; sourceTree = "<group>"; };
 		74366F02158B973C00A17D8A /* MyLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogInViewController.m; sourceTree = "<group>"; };
-		74366F04158B975500A17D8A /* MySignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySignUpViewController.h; sourceTree = "<group>"; };
-		74366F05158B975500A17D8A /* MySignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignUpViewController.m; sourceTree = "<group>"; };
 		747F006A15951A58000F601E /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
 		747F006B15951A58000F601E /* ExitDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitDown.png; sourceTree = "<group>"; };
 		747F006C15951A58000F601E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
@@ -114,6 +115,10 @@
 		C4BBB7C116FD2D73003CA3F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C4FD613517286AC800F61563 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		C4FD613717286ACD00F61563 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		F5228FA31938F58500D0160A /* MuseoSansRounded-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-100.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-100.otf"; sourceTree = "<group>"; };
+		F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-300.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-300.otf"; sourceTree = "<group>"; };
+		F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-500.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-500.otf"; sourceTree = "<group>"; };
+		F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-900.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-900.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +236,10 @@
 		74366EAD158AAE1000A17D8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5228FA31938F58500D0160A /* MuseoSansRounded-100.otf */,
+				F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */,
+				F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */,
+				F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */,
 				74366EAE158AAE1000A17D8A /* LogInAndSignUpDemo-Info.plist */,
 				74366EAF158AAE1000A17D8A /* InfoPlist.strings */,
 				74366EB2158AAE1000A17D8A /* main.m */,
@@ -268,8 +277,6 @@
 				74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */,
 				74366F01158B973C00A17D8A /* MyLogInViewController.h */,
 				74366F02158B973C00A17D8A /* MyLogInViewController.m */,
-				74366F04158B975500A17D8A /* MySignUpViewController.h */,
-				74366F05158B975500A17D8A /* MySignUpViewController.m */,
 			);
 			name = "Subclass Customization";
 			sourceTree = "<group>";
@@ -324,6 +331,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5228FA71938F5D400D0160A /* MuseoSansRounded-100.otf in Resources */,
+				F5228FA81938F5D400D0160A /* MuseoSansRounded-300.otf in Resources */,
+				F5228FA91938F5D400D0160A /* MuseoSansRounded-500.otf in Resources */,
+				F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */,
 				74366EB1158AAE1000A17D8A /* InfoPlist.strings in Resources */,
 				74366EE8158AC82C00A17D8A /* DefaultSettingsViewController.xib in Resources */,
 				74366EF5158AF2D300A17D8A /* PropertyConfigViewController.xib in Resources */,
@@ -362,7 +373,6 @@
 				74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */,
 				74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */,
 				74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */,
-				74366F06158B975500A17D8A /* MySignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 
 @interface MyLogInViewController ()
 @property (nonatomic, strong) UIImageView *fieldsBackground;
+@property (nonatomic, strong) UITextField *logoText;
 @end
 
 @implementation MyLogInViewController
@@ -21,7 +22,19 @@
     [super viewDidLoad];
     
     [self.logInView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
-    [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
+    // if 'nil' not selected it will bring up Parse Logo
+    [self.logInView setLogo:[UIImage imageNamed:nil]];
+    // sets logo font,size, and position
+    UILabel *logoText = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 40)];
+    logoText.textColor = [UIColor whiteColor];
+    logoText.text = @"TWIZ";
+    logoText.textAlignment = NSTextAlignmentCenter;
+    // custom font
+    UIFont *logoFont = [UIFont fontWithName:@"MuseoSansRounded-900" size:40];
+    logoText.font = logoFont;
+    
+    [self.logInView addSubview:logoText];
+
     
     // Set buttons appearance
     [self.logInView.dismissButton setImage:[UIImage imageNamed:@"Exit.png"] forState:UIControlStateNormal];
