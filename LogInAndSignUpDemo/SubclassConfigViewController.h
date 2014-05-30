@@ -8,7 +8,7 @@
 
 @interface SubclassConfigViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
-
+@property (nonatomic,strong) UIView *startView;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
 
 - (IBAction)logOutButtonTapAction:(id)sender;

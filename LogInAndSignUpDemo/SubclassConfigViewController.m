@@ -12,15 +12,15 @@
 
 @implementation SubclassConfigViewController
 
-
 #pragma mark - UIViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     if ([PFUser currentUser]) {
         self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
     } else {
-        self.welcomeLabel.text = NSLocalizedString(@"Not logged in", nil);
+        self.welcomeLabel.text = NSLocalizedString(@"You Need to Log in", nil);
     }
 }
 
@@ -33,14 +33,13 @@
         MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
         logInViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         logInViewController.delegate = self;
-        logInViewController.facebookPermissions = @[@"friends_about_me"];
-        logInViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton | PFLogInFieldsDismissButton;
-        // Present Log In View Controller
+        logInViewController.fields =   PFLogInFieldsTwitter;        // Present Log In View Controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
     } else {
         MyPlayViewController *playViewController = [MyPlayViewController new];
         [self presentViewController:playViewController animated:YES completion:NULL];
     }
+
 }
 
 

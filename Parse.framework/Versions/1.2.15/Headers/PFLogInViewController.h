@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "PFLogInView.h"
-#import "PFSignUpViewController.h"
 #import "PFUser.h"
 
 @protocol PFLogInViewControllerDelegate;
@@ -43,14 +42,6 @@
 /// The delegate that responds to the control events of PFLogInViewController.
 @property (nonatomic, assign) id<PFLogInViewControllerDelegate> delegate;
 
-/// The facebook permissions that Facebook log in requests for.
-/// If unspecified, the default is basic facebook permissions.
-@property (nonatomic, retain) NSArray *facebookPermissions;
-
-/// The sign up controller if sign up is enabled.
-/// Use this to configure the sign up view, and the transition animation to the sign up view.
-/// The default is a sign up view with a username, a password, a dismiss button and a sign up button.
-@property (nonatomic, retain) PFSignUpViewController *signUpController; 
 
 @end
 

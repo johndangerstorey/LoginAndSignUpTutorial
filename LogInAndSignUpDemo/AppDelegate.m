@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // ? I try to make the background purple as soon as possible, but it doesn't seem to work.  Is there another way that I am missing?
+    [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
     
     // ****************************************************************************
     // Fill in with your Parse and Twitter credentials. Don't forget to add your
@@ -32,7 +34,6 @@
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SubclassConfigViewController alloc] init]];
-    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

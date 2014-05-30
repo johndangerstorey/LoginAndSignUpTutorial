@@ -5,18 +5,15 @@
 //  Created by Mattieu Gamache-Asselin on 6/15/12.
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
-
 #import "MyLogInViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MyLogInViewController ()
-@property (nonatomic, strong) UIImageView *fieldsBackground;
-@property (nonatomic, strong) UITextField *logoText;
+@property (nonatomic, strong) UILabel *logoText;
 @end
 
 @implementation MyLogInViewController
 
-@synthesize fieldsBackground;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,28 +21,52 @@
     [self.logInView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
     // if 'nil' not selected it will bring up Parse Logo
     [self.logInView setLogo:[UIImage imageNamed:nil]];
-    // sets logo font,size, and position
-    UILabel *logoText = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 40)];
-    logoText.textColor = [UIColor whiteColor];
-    logoText.text = @"TWIZ";
-    logoText.textAlignment = NSTextAlignmentCenter;
-    // custom font
-    UIFont *logoFont = [UIFont fontWithName:@"MuseoSansRounded-900" size:40];
-    logoText.font = logoFont;
+    // sets logo font,size, and position - ? - I will need to use this for 3 other labels.  Do I define it in each place or is there a way to share it.  I started making a UIFont subclass but came accross difficulties because it makes you define the size each time you define the font.  The characteristics I want to persist is the NAME and the COLOR, but even those two are on completely different classes (being UIFont and UILabel)
+    UILabel *logoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 40)];
+    logoLabel.text = @"TWIZ";
+    logoLabel.textColor = [UIColor whiteColor];
+    logoLabel.textAlignment = NSTextAlignmentCenter;
     
-    [self.logInView addSubview:logoText];
-
+    UIFont *museoTitleFont = [UIFont fontWithName:@"MuseoSansRounded-900" size:40.0];
+    logoLabel.font = museoTitleFont;
+    logoLabel.textAlignment = NSTextAlignmentCenter;
+    [self.logInView addSubview:logoLabel];
     
-    // Set buttons appearance
-    [self.logInView.dismissButton setImage:[UIImage imageNamed:@"Exit.png"] forState:UIControlStateNormal];
-    [self.logInView.dismissButton setImage:[UIImage imageNamed:@"ExitDown.png"] forState:UIControlStateHighlighted];
     
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateNormal];
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateHighlighted];
-    [self.logInView.facebookButton setBackgroundImage:[UIImage imageNamed:@"FacebookDown.png"] forState:UIControlStateHighlighted];
-    [self.logInView.facebookButton setBackgroundImage:[UIImage imageNamed:@"Facebook.png"] forState:UIControlStateNormal];
-    [self.logInView.facebookButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.facebookButton setTitle:@"" forState:UIControlStateHighlighted];
+    // tagline ^see above comment on repeating code
+    
+    
+    UILabel *taglineLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];
+    taglineLabel.text = @"the twitter quiz game";
+    taglineLabel.textColor = [UIColor whiteColor];
+    taglineLabel.textAlignment = NSTextAlignmentCenter;
+    
+    UIFont *museoTagLineFont = [UIFont fontWithName:@"MuseoSansRounded-300" size:14.0];
+    taglineLabel.font = museoTagLineFont;
+    taglineLabel.textAlignment = NSTextAlignmentCenter;
+    [self.logInView addSubview:taglineLabel];
+    
+    
+    // twitter signup button - ? - How do I get this to do the same thing as the button below?
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self
+               action:@selector(twitterSignIn)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Login with Twitter" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIFont *museoButtonFont = [UIFont fontWithName:@"MuseoSansRounded-500" size:18.0];
+    [button setFont:museoButtonFont];
+    button.frame = CGRectMake(60.0, 287.0, 200.0, 40.0);
+    [[button layer] setCornerRadius:5.0f];
+    [[button layer] setBorderWidth:1.0f];
+    [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
+    [self.view addSubview:button];
+    
+    
+    // Set buttons appearance for twitter button
+    
     
     [self.logInView.twitterButton setImage:nil forState:UIControlStateNormal];
     [self.logInView.twitterButton setImage:nil forState:UIControlStateHighlighted];
@@ -54,40 +75,18 @@
     [self.logInView.twitterButton setTitle:@"" forState:UIControlStateNormal];
     [self.logInView.twitterButton setTitle:@"" forState:UIControlStateHighlighted];
     
-    [self.logInView.signUpButton setBackgroundImage:[UIImage imageNamed:@"Signup.png"] forState:UIControlStateNormal];
-    [self.logInView.signUpButton setBackgroundImage:[UIImage imageNamed:@"SignupDown.png"] forState:UIControlStateHighlighted];
-    [self.logInView.signUpButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.signUpButton setTitle:@"" forState:UIControlStateHighlighted];
-    
-    // Add login field background
-    fieldsBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LoginFieldBG.png"]];
-    [self.logInView addSubview:self.fieldsBackground];
-    [self.logInView sendSubviewToBack:self.fieldsBackground];
-    
-    // Remove text shadow
-    CALayer *layer = self.logInView.usernameField.layer;
-    layer.shadowOpacity = 0.0f;
-    layer = self.logInView.passwordField.layer;
-    layer.shadowOpacity = 0.0f;
-    
-    // Set field text color
-    [self.logInView.usernameField setTextColor:[UIColor colorWithRed:135.0f/255.0f green:118.0f/255.0f blue:92.0f/255.0f alpha:1.0]];
-    [self.logInView.passwordField setTextColor:[UIColor colorWithRed:135.0f/255.0f green:118.0f/255.0f blue:92.0f/255.0f alpha:1.0]];
-    
+}
+
+-(BOOL) twitterSignIn {
+    NSLog(@"You Clicked Sign In");
+    return YES;
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
     // Set frame for elements
-    [self.logInView.dismissButton setFrame:CGRectMake(10.0f, 10.0f, 87.5f, 45.5f)];
-    [self.logInView.logo setFrame:CGRectMake(66.5f, 70.0f, 187.0f, 58.5f)];
-    [self.logInView.facebookButton setFrame:CGRectMake(35.0f, 287.0f, 120.0f, 40.0f)];
-    [self.logInView.twitterButton setFrame:CGRectMake(35.0f+130.0f, 287.0f, 120.0f, 40.0f)];
-    [self.logInView.signUpButton setFrame:CGRectMake(35.0f, 385.0f, 250.0f, 40.0f)];
-    [self.logInView.usernameField setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 50.0f)];
-    [self.logInView.passwordField setFrame:CGRectMake(35.0f, 195.0f, 250.0f, 50.0f)];
-    [self.fieldsBackground setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 100.0f)];
+    [self.logInView.twitterButton setFrame:CGRectMake(100.0f, 387.0f, 120.0f, 40.0f)];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
