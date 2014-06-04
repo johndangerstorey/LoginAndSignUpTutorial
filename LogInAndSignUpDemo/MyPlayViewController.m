@@ -9,7 +9,6 @@
 #import "MyPlayViewController.h"
 
 #import "JASidePanelController.h"
-#import "JACenterViewController.h"
 #import "JALeftViewController.h"
 #import "JARightViewController.h"
 

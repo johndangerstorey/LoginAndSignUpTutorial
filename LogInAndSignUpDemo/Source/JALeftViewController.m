@@ -26,10 +26,9 @@
 
 #import "JALeftViewController.h"
 #import "JASidePanelController.h"
-
+#import "MyCenterViewController.h"
 #import "UIViewController+JASidePanel.h"
 #import "JARightViewController.h"
-#import "JACenterViewController.h"
 
 @interface JALeftViewController ()
 
@@ -133,7 +132,7 @@
 }
 
 - (void)_changeCenterPanelTapped:(id)sender {
-    self.sidePanelController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[JACenterViewController alloc] init]];
+    self.sidePanelController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[MyCenterViewController alloc] init]];
 }
 
 @end

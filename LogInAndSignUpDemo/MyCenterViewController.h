@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 
-@interface SubclassConfigViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface MyCenterViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 @property (nonatomic,strong) UIView *startView;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;

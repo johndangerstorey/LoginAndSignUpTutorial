@@ -6,18 +6,19 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 
-#import "SubclassConfigViewController.h"
+#import "MyCenterViewController.h"
 #import "MyLogInViewController.h"
 #import "MyPlayViewController.h"
 
-#import "JACenterViewController.h"
 
 
-@implementation SubclassConfigViewController
+
+@implementation MyCenterViewController
 
 #pragma mark - UIViewController
 - (void) viewWillAppear:(BOOL)animated{
     // initial screen here
+    self.title = @"Twiz";
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
     
 }
