@@ -15,6 +15,39 @@
 
 @implementation MyCenterViewController
 
+- (void) dealloc
+{
+    // If you don't remove yourself as an observer, the Notification Center
+    // will continue to try and send notification objects to the deallocated
+    // object.
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (id) init
+{
+    self = [super init];
+    if (!self) return nil;
+    
+    // Add this instance of TestClass as an observer of the TestNotification.
+    // We tell the notification center to inform us of "TestNotification"
+    // notifications using the receiveTestNotification: selector. By
+    // specifying object:nil, we tell the notification center that we are not
+    // interested in who posted the notification. If you provided an actual
+    // object rather than nil, the notification center will only notify you
+    // when the notification was posted by that particular object.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveLoginSuccessfulMessage)
+                                                 name:@"LoginSuccessful"
+                                               object:nil];
+    
+    return self;
+}
+
+-(void) recieveLoginSuccessfulMessage{
+    NSLog(@"Message Successfully Recieved");
+}
+
 #pragma mark - UIViewController
 - (void) viewWillAppear:(BOOL)animated{
     // initial screen here
@@ -42,10 +75,32 @@
         userName.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
         
         [self.view addSubview:userName];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [button addTarget:self
+                   action:@selector(twitterLogOut)
+         forControlEvents:UIControlEventTouchUpInside];
+        [button setTitle:@"Log Out" forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        UIFont *museoButtonFont = [UIFont fontWithName:@"MuseoSansRounded-500" size:18.0];
+        [button setFont:museoButtonFont];
+        button.frame = CGRectMake(60.0, 287.0, 200.0, 40.0);
+        [[button layer] setCornerRadius:5.0f];
+        [[button layer] setBorderWidth:1.0f];
+        [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
+        [self.view addSubview:button];
     }
 
 }
 
+- (void)twitterLogOut{
+    NSLog(@"Log Out Clicked");
+    [PFUser logOut];
+    MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
+    logInViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    logInViewController.delegate = self;
+    logInViewController.fields =   PFLogInFieldsTwitter;
+}
 
 #pragma mark - PFLogInViewControllerDelegate
 

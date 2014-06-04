@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 #import "MyLogInViewController.h"
+#import "MyPlayViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MyLogInViewController ()
@@ -68,29 +69,27 @@
     [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
     [self.view addSubview:button];
     
-    
-    // Alters button appearance for twitter button to be as close as possible to above
-    
-    
-    [self.logInView.twitterButton setImage:[UIImage imageNamed:@"loginWithTwitterBtn.png"] forState:UIControlStateNormal];
-    [self.logInView.twitterButton setImage:nil forState:UIControlStateHighlighted];
-    [self.logInView.twitterButton setTitle:@"Login with Twitter" forState:UIControlStateNormal];
-    [self.logInView.twitterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.logInView.twitterButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.twitterButton setTitle:@"" forState:UIControlStateHighlighted];
-    
 }
 
 -(BOOL) twitterSignIn {
     NSLog(@"You Clicked Sign In");
+    [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (!user) {
+            NSLog(@"Uh oh. The user cancelled the Twitter login.");
+            return;
+        } else if (user.isNew) {
+            NSLog(@"User signed up and logged in with Twitter!");
+        } else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccessful" object:nil];
+            
+        }     
+    }];
     return YES;
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    
-    // Set frame for elements
-    [self.logInView.twitterButton setFrame:CGRectMake(60.0f, 387.0f, 200.0f, 40.0f)];
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
