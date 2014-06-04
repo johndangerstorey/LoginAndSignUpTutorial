@@ -11,42 +11,19 @@
 #import "MyPlayViewController.h"
 
 
+@interface MyCenterViewController ()
 
+- (void) refreshView;
+
+@end
 
 @implementation MyCenterViewController
 
 - (void) dealloc
 {
-    // If you don't remove yourself as an observer, the Notification Center
-    // will continue to try and send notification objects to the deallocated
-    // object.
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (id) init
-{
-    self = [super init];
-    if (!self) return nil;
-    
-    // Add this instance of TestClass as an observer of the TestNotification.
-    // We tell the notification center to inform us of "TestNotification"
-    // notifications using the receiveTestNotification: selector. By
-    // specifying object:nil, we tell the notification center that we are not
-    // interested in who posted the notification. If you provided an actual
-    // object rather than nil, the notification center will only notify you
-    // when the notification was posted by that particular object.
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(receiveLoginSuccessfulMessage)
-                                                 name:@"LoginSuccessful"
-                                               object:nil];
-    
-    return self;
-}
-
--(void) recieveLoginSuccessfulMessage{
-    NSLog(@"Message Successfully Recieved");
-}
 
 #pragma mark - UIViewController
 - (void) viewWillAppear:(BOOL)animated{
@@ -90,7 +67,17 @@
         [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
         [self.view addSubview:button];
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(refreshView)
+                                                 name:@"LoginSuccessfulNotification"
+                                               object:nil];
 
+}
+
+- (void) refreshView{
+    NSLog(@"You want to refresh view");
+    [self.view setNeedsDisplay];
 }
 
 - (void)twitterLogOut{

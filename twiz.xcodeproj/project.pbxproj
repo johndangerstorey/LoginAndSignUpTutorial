@@ -205,7 +205,7 @@
 			children = (
 				74366EB5158AAE1000A17D8A /* AppDelegate.h */,
 				74366EB6158AAE1000A17D8A /* AppDelegate.m */,
-				74366EF6158B959200A17D8A /* Subclasses */,
+				74366EF6158B959200A17D8A /* My Views */,
 			);
 			name = "twiz files";
 			path = LogInAndSignUpDemo;
@@ -227,7 +227,7 @@
 			path = LogInAndSignUpDemo;
 			sourceTree = "<group>";
 		};
-		74366EF6158B959200A17D8A /* Subclasses */ = {
+		74366EF6158B959200A17D8A /* My Views */ = {
 			isa = PBXGroup;
 			children = (
 				74366EF7158B95C800A17D8A /* MyCenterViewController.h */,
@@ -238,7 +238,7 @@
 				74366F02158B973C00A17D8A /* MyLogInViewController.m */,
 				F5228FB0193900F100D0160A /* XIB */,
 			);
-			name = Subclasses;
+			name = "My Views";
 			sourceTree = "<group>";
 		};
 		F5228FB0193900F100D0160A /* XIB */ = {

@@ -51,10 +51,10 @@
     taglineLabel.textAlignment = NSTextAlignmentCenter;
     [self.logInView addSubview:taglineLabel];
     
+    // removes pre-made twitter button
+    [self.logInView.twitterButton removeFromSuperview];
     
-    // twitter signup button - ? - How do I get this to do the same thing as the button below.  I tried looking for where self.logInView.twitterButton is located but couldn't find any clues.
-    
-    
+    // makes my custom one
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button addTarget:self
                action:@selector(twitterSignIn)
@@ -68,7 +68,7 @@
     [[button layer] setBorderWidth:1.0f];
     [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
     [self.view addSubview:button];
-    
+
 }
 
 -(BOOL) twitterSignIn {
@@ -80,8 +80,9 @@
         } else if (user.isNew) {
             NSLog(@"User signed up and logged in with Twitter!");
         } else {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccessful" object:nil];
-            
+            NSLog(@"signin Sucessfull");
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccessfulNotification" object:nil userInfo:nil];
+            NSLog(@"Post Successfull");
         }     
     }];
     return YES;
