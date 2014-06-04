@@ -41,7 +41,6 @@
 		F5228FA81938F5D400D0160A /* MuseoSansRounded-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */; };
 		F5228FA91938F5D400D0160A /* MuseoSansRounded-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */; };
 		F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */; };
-		F5228FAE193900DA00D0160A /* MyPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5228FAC193900DA00D0160A /* MyPlayViewController.m */; };
 		F5228FAF193900DA00D0160A /* MyPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5228FAD193900DA00D0160A /* MyPlayViewController.xib */; };
 		F5229048193ED5B400D0160A /* loginWithTwitterBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F5229047193ED5B300D0160A /* loginWithTwitterBtn.png */; };
 		F522904E193EDBC700D0160A /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F522904B193EDBC700D0160A /* JASidePanelController.m */; };
@@ -93,8 +92,6 @@
 		F5228FA41938F58500D0160A /* MuseoSansRounded-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-300.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-300.otf"; sourceTree = "<group>"; };
 		F5228FA51938F58500D0160A /* MuseoSansRounded-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-500.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-500.otf"; sourceTree = "<group>"; };
 		F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoSansRounded-900.otf"; path = "../../../../../../../Volumes/Macintosh HD/Users/johndangerstorey/Documents/Stock/Fonts/MuseoSansRounded-900.otf"; sourceTree = "<group>"; };
-		F5228FAB193900DA00D0160A /* MyPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlayViewController.h; sourceTree = "<group>"; };
-		F5228FAC193900DA00D0160A /* MyPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlayViewController.m; sourceTree = "<group>"; };
 		F5228FAD193900DA00D0160A /* MyPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayViewController.xib; sourceTree = "<group>"; };
 		F5229047193ED5B300D0160A /* loginWithTwitterBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginWithTwitterBtn.png; sourceTree = "<group>"; };
 		F522904A193EDBC700D0160A /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
@@ -232,8 +229,6 @@
 			children = (
 				74366EF7158B95C800A17D8A /* MyCenterViewController.h */,
 				74366EF8158B95C800A17D8A /* MyCenterViewController.m */,
-				F5228FAB193900DA00D0160A /* MyPlayViewController.h */,
-				F5228FAC193900DA00D0160A /* MyPlayViewController.m */,
 				74366F01158B973C00A17D8A /* MyLogInViewController.h */,
 				74366F02158B973C00A17D8A /* MyLogInViewController.m */,
 				F5228FB0193900F100D0160A /* XIB */,
@@ -345,7 +340,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5228FAE193900DA00D0160A /* MyPlayViewController.m in Sources */,
 				74366EB3158AAE1000A17D8A /* main.m in Sources */,
 				F522904E193EDBC700D0160A /* JASidePanelController.m in Sources */,
 				F522905E193EDDF400D0160A /* JADebugViewController.m in Sources */,

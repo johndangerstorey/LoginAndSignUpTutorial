@@ -114,7 +114,7 @@ typedef enum _JASidePanelState {
 // should the center panel bounce when you are panning closed a left/right panel.
 @property (nonatomic) BOOL bounceOnSidePanelClose; // defaults to NO
 
-// while changing the center panel, should we bounce it offscreen?
+// while changing the center panel, should we bounce it offscreen...
 @property (nonatomic) BOOL bounceOnCenterPanelChange; // defaults to YES
 
 #pragma mark - Gesture Behavior

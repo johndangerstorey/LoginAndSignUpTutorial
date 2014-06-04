@@ -26,7 +26,7 @@
 
 #import "JARightViewController.h"
 #import "JASidePanelController.h"
-
+#import "MyLogInViewController.h"
 #import "UIViewController+JASidePanel.h"
 
 @interface JARightViewController ()
@@ -37,17 +37,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor redColor];
-    self.label.text = @"Right Panel";
-    [self.label sizeToFit];
-    self.hide.frame = CGRectMake(self.view.bounds.size.width - 220.0f, 70.0f, 200.0f, 40.0f);
-    self.hide.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
-    self.show.frame = self.hide.frame;
-    self.show.autoresizingMask = self.hide.autoresizingMask;
-    
+	self.view.backgroundColor = [UIColor darkGrayColor];
+    self.label.text = @"Options";
+// Provided by JASlide -- need to keep hidden until you want to use.
+    self.hide.hidden = YES;
     self.removeRightPanel.hidden = YES;
     self.addRightPanel.hidden = YES;
     self.changeCenterPanel.hidden = YES;
+    
+    // signout button
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self
+               action:@selector(twitterLogOut)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Log Out" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIFont *museoButtonFont = [UIFont fontWithName:@"MuseoSansRounded-500" size:18.0];
+    [button setFont:museoButtonFont];
+    button.frame = CGRectMake(90.0, 287.0, 200.0, 40.0);
+    [[button layer] setCornerRadius:5.0f];
+    [[button layer] setBorderWidth:1.0f];
+    [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
+    [self.view addSubview:button];
+}
+
+- (void)twitterLogOut{
+    NSLog(@"Log Out Clicked");
+    [PFUser logOut];
+    MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
+    logInViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    logInViewController.delegate = self;
+    logInViewController.fields =   PFLogInFieldsTwitter;
+
+    [self presentViewController:logInViewController animated:YES completion:NULL];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -6,7 +6,8 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 #import "MyLogInViewController.h"
-#import "MyPlayViewController.h"
+#import "JASidePanelController.h"
+#import "MyCenterViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MyLogInViewController ()
@@ -26,7 +27,7 @@
     [self.logInView setLogo:[UIImage imageNamed:nil]];
     
     
-    // sets logo font,size, and position - ? - I will need to use this for 3 other labels.  Do I define it in each place or is there a way to share it.  I started making a UIFont subclass but came accross difficulties because it makes you define the size each time you define the font.  The characteristics I want to persist is the NAME and the COLOR, but even those two are on completely different classes (being UIFont and UILabel)
+    // sets logo font,size, and position Q:3 I will need to use this for 3 other labels.  Do I define it in each place or is there a way to share it.  I started making a UIFont subclass but came accross difficulties because it makes you define the size each time you define the font.  The characteristics I want to persist is the NAME and the COLOR, but even those two are on completely different classes (being UIFont and UILabel)
     UILabel *logoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 40)];
     logoLabel.text = @"TWIZ";
     logoLabel.textColor = [UIColor whiteColor];
@@ -83,6 +84,9 @@
             NSLog(@"signin Sucessfull");
             [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccessfulNotification" object:nil userInfo:nil];
             NSLog(@"Post Successfull");
+            // A:2 removes the viewcontroller but doesn't reload the page... trying to add NSNotification to refresh page in Q:2  Also curious about if I reload the center page if it will go back to the MyCenterViewController rather than the JARightViewController, but that should be easy enough after I figure out even if reload page doesn't do it.
+            [self dismissViewControllerAnimated:YES completion:NULL];
+
         }     
     }];
     return YES;

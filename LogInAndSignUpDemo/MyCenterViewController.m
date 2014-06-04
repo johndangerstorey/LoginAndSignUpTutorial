@@ -8,12 +8,14 @@
 
 #import "MyCenterViewController.h"
 #import "MyLogInViewController.h"
-#import "MyPlayViewController.h"
+#import "UIViewController+JASidePanel.h"
+#import "JASidePanelController.h"
 
 
 @interface MyCenterViewController ()
 
 - (void) refreshView;
+@property (nonatomic, weak) UIButton *refreshBtn;
 
 @end
 
@@ -30,7 +32,11 @@
     // initial screen here
     self.title = @"Twiz";
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
-    
+    // creates listener for Twitter Login
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(refreshView)
+                                                 name:@"LoginSuccessfulNotification"
+                                               object:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -42,51 +48,47 @@
         MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
         logInViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         logInViewController.delegate = self;
-        logInViewController.fields =   PFLogInFieldsTwitter;        // Present Log In View Controller
+        logInViewController.fields =   PFLogInFieldsTwitter;
+        // Present Log In View Controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
     } else {
-        // works only if you login, then close app and login, not after information is actually sent to twitter, then redirects you back up to top 'viewWillAppear' method
+        // works only if you login, then close app and login, not after information is actually sent to twitter, then redirects you back up to top 'viewWillAppear' method.. so now I'm going to create a listener to listen for login and refreash page so that the correct view comes in
         [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
         
         UILabel *userName = [[UILabel alloc]initWithFrame:CGRectMake(10, 100, self.view.bounds.size.width, 40)];
         userName.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
-        
         [self.view addSubview:userName];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button addTarget:self
-                   action:@selector(twitterLogOut)
-         forControlEvents:UIControlEventTouchUpInside];
-        [button setTitle:@"Log Out" forState:UIControlStateNormal];
+        button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
+        [button setTitle:@"Refresh" forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         UIFont *museoButtonFont = [UIFont fontWithName:@"MuseoSansRounded-500" size:18.0];
         [button setFont:museoButtonFont];
-        button.frame = CGRectMake(60.0, 287.0, 200.0, 40.0);
-        [[button layer] setCornerRadius:5.0f];
-        [[button layer] setBorderWidth:1.0f];
-        [[button layer] setBorderColor:[UIColor whiteColor].CGColor];
+        button.frame = CGRectMake(10.0, self.view.bounds.size.height - 50.0f, self.view.bounds.size.width - 20.0f, 40.0);
+        [[button layer] setCornerRadius:3.0f];
+        [[button layer] setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.1].CGColor];
+        [button addTarget:self action:@selector(refreshView) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
+        self.refreshBtn = button;
     }
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(refreshView)
-                                                 name:@"LoginSuccessfulNotification"
-                                               object:nil];
-
 }
+//  here I need it to not exactly create a new instance of the controller, but just refreash the existing view.  Or do you think it's a better pattern to create a new view to initiate after the "LoginSuccessfulNotification" is called Q:2 what's the correct pattern for this?
 
+//  Q:3 should I be setting all the login for setting labels, buttons, etc... in this view so they just automatically get called once the login comes back successfull?  This however would mean I need to do it outside of the function as well because it wouldn't naturally do it everytime I answer a question or it logs in with a user from the initial screen (like a 'remember me' user that hasn't logged out. Or I could keep all the logic inside of my refreshView and just call that meathod upon viewDidLoad.  I guess most of my questions are on data structure and where it is most appropriate to call which functions.
+
+// A:2 I ended up just dismissing the viewcontroller in the LoginViewController, transitioning back to the center, and create a new instance of the view controller.
 - (void) refreshView{
-    NSLog(@"You want to refresh view");
-    [self.view setNeedsDisplay];
-}
+        NSLog(@"You want to refresh view");
+    // transitions back to center panel
+        [self.sidePanelController showCenterPanelAnimated:YES];
+    // refreshes center panel
+        self.sidePanelController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[MyCenterViewController alloc] init]];
 
-- (void)twitterLogOut{
-    NSLog(@"Log Out Clicked");
-    [PFUser logOut];
-    MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
-    logInViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-    logInViewController.delegate = self;
-    logInViewController.fields =   PFLogInFieldsTwitter;
+//    [self.view setNeedsDisplay];
+//    
+//    UIView *playView = [UIView alloc];
+//    [self.view addSubview:playView];
 }
 
 #pragma mark - PFLogInViewControllerDelegate
@@ -101,7 +103,7 @@
     return NO;
 }
 
-// Sent to the delegate when a PFUser is logged in.
+// Sent to the delegate when a PFUser is logged in... not working
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
