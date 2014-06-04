@@ -72,7 +72,7 @@
     // Alters button appearance for twitter button to be as close as possible to above
     
     
-    [self.logInView.twitterButton setImage:nil forState:UIControlStateNormal];
+    [self.logInView.twitterButton setImage:[UIImage imageNamed:@"loginWithTwitterBtn.png"] forState:UIControlStateNormal];
     [self.logInView.twitterButton setImage:nil forState:UIControlStateHighlighted];
     [self.logInView.twitterButton setTitle:@"Login with Twitter" forState:UIControlStateNormal];
     [self.logInView.twitterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

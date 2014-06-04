@@ -9,8 +9,16 @@
 #import "AppDelegate.h"
 #import "SubclassConfigViewController.h"
 
+#import "JASidePanelController.h"
+#import "JACenterViewController.h"
+#import "JALeftViewController.h"
+#import "JARightViewController.h"
+
 
 @implementation AppDelegate
+
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 
 #pragma mark - UIApplicationDelegate
@@ -27,15 +35,29 @@
     [Parse setApplicationId:@"BYtF2ZQMPHkhm8kQzZKgJSXh19Tk02661aGeHQSV" clientKey:@"wCCqhl3GrlEOzESzPGRc1bkcyewI8Qi8KsUtdfhi"];
     [PFFacebookUtils initializeFacebook];
     [PFTwitterUtils initializeWithConsumerKey:@"XEiHejzzFjNIzEy2bSNEug" consumerSecret:@"uEeJboXD9ZF3V8sRs89pWpGngF53xqsBd9sTT8GfE"];
-    
+
     // Set default ACLs
     PFACL *defaultACL = [PFACL ACL];
     [defaultACL setPublicReadAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
-    
+/*    
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SubclassConfigViewController alloc] init]];
     [self.window makeKeyAndVisible];
     return YES;
+ */
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	
+	self.viewController = [[JASidePanelController alloc] init];
+    self.viewController.shouldDelegateAutorotateToVisiblePanel = NO;
+    
+	self.viewController.leftPanel = [[JALeftViewController alloc] init];
+	self.viewController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[SubclassConfigViewController alloc] init]];
+	self.viewController.rightPanel = [[JARightViewController alloc] init];
+	
+	self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+
 }
 
 // Facebook oauth callback

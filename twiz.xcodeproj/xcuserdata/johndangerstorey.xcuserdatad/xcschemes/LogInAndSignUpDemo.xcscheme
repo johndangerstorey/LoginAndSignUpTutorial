@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
-               BuildableName = "LogInAndSignUpDemo.app"
+               BuildableName = "twiz.app"
                BlueprintName = "twiz"
                ReferencedContainer = "container:twiz.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
-            BuildableName = "LogInAndSignUpDemo.app"
+            BuildableName = "twiz.app"
             BlueprintName = "twiz"
             ReferencedContainer = "container:twiz.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
-            BuildableName = "LogInAndSignUpDemo.app"
+            BuildableName = "twiz.app"
             BlueprintName = "twiz"
             ReferencedContainer = "container:twiz.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
-            BuildableName = "LogInAndSignUpDemo.app"
+            BuildableName = "twiz.app"
             BlueprintName = "twiz"
             ReferencedContainer = "container:twiz.xcodeproj">
          </BuildableReference>

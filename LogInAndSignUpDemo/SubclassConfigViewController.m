@@ -10,18 +10,16 @@
 #import "MyLogInViewController.h"
 #import "MyPlayViewController.h"
 
+#import "JACenterViewController.h"
+
+
 @implementation SubclassConfigViewController
 
 #pragma mark - UIViewController
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void) viewWillAppear:(BOOL)animated{
+    // initial screen here
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
     
-    if ([PFUser currentUser]) {
-        self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
-    } else {
-        self.welcomeLabel.text = NSLocalizedString(@"You Need to Log in", nil);
-    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -37,8 +35,12 @@
         [self presentViewController:logInViewController animated:YES completion:NULL];
     } else {
         // works only if you login, then close app and login, not after information is actually sent to twitter, then redirects you back up to top 'viewWillAppear' method
-        MyPlayViewController *playViewController = [MyPlayViewController new];
-        [self presentViewController:playViewController animated:NO completion:NULL];
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
+        
+        UILabel *userName = [[UILabel alloc]initWithFrame:CGRectMake(10, 100, self.view.bounds.size.width, 40)];
+        userName.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
+        
+        [self.view addSubview:userName];
     }
 
 }

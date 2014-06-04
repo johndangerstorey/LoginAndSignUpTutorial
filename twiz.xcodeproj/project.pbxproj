@@ -43,6 +43,14 @@
 		F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5228FA61938F58500D0160A /* MuseoSansRounded-900.otf */; };
 		F5228FAE193900DA00D0160A /* MyPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5228FAC193900DA00D0160A /* MyPlayViewController.m */; };
 		F5228FAF193900DA00D0160A /* MyPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5228FAD193900DA00D0160A /* MyPlayViewController.xib */; };
+		F5229048193ED5B400D0160A /* loginWithTwitterBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F5229047193ED5B300D0160A /* loginWithTwitterBtn.png */; };
+		F522904E193EDBC700D0160A /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F522904B193EDBC700D0160A /* JASidePanelController.m */; };
+		F522904F193EDBC700D0160A /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F522904D193EDBC700D0160A /* UIViewController+JASidePanel.m */; };
+		F522905D193EDDF400D0160A /* JACenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5229054193EDDF400D0160A /* JACenterViewController.m */; };
+		F522905E193EDDF400D0160A /* JADebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5229056193EDDF400D0160A /* JADebugViewController.m */; };
+		F522905F193EDDF400D0160A /* JALeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5229058193EDDF400D0160A /* JALeftViewController.m */; };
+		F5229060193EDDF400D0160A /* JARightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F522905A193EDDF400D0160A /* JARightViewController.m */; };
+		F5229061193EDDF400D0160A /* JASidePanels-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F522905B193EDDF400D0160A /* JASidePanels-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +97,21 @@
 		F5228FAB193900DA00D0160A /* MyPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlayViewController.h; sourceTree = "<group>"; };
 		F5228FAC193900DA00D0160A /* MyPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlayViewController.m; sourceTree = "<group>"; };
 		F5228FAD193900DA00D0160A /* MyPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayViewController.xib; sourceTree = "<group>"; };
+		F5229047193ED5B300D0160A /* loginWithTwitterBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginWithTwitterBtn.png; sourceTree = "<group>"; };
+		F522904A193EDBC700D0160A /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		F522904B193EDBC700D0160A /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		F522904C193EDBC700D0160A /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		F522904D193EDBC700D0160A /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		F5229053193EDDF400D0160A /* JACenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACenterViewController.h; sourceTree = "<group>"; };
+		F5229054193EDDF400D0160A /* JACenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACenterViewController.m; sourceTree = "<group>"; };
+		F5229055193EDDF400D0160A /* JADebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JADebugViewController.h; sourceTree = "<group>"; };
+		F5229056193EDDF400D0160A /* JADebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JADebugViewController.m; sourceTree = "<group>"; };
+		F5229057193EDDF400D0160A /* JALeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALeftViewController.h; sourceTree = "<group>"; };
+		F5229058193EDDF400D0160A /* JALeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALeftViewController.m; sourceTree = "<group>"; };
+		F5229059193EDDF400D0160A /* JARightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARightViewController.h; sourceTree = "<group>"; };
+		F522905A193EDDF400D0160A /* JARightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARightViewController.m; sourceTree = "<group>"; };
+		F522905B193EDDF400D0160A /* JASidePanels-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JASidePanels-Info.plist"; sourceTree = "<group>"; };
+		F522905C193EDDF400D0160A /* JASidePanels-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JASidePanels-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +146,7 @@
 		741203C415900A3C00820BE9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F5229047193ED5B300D0160A /* loginWithTwitterBtn.png */,
 				C4FD613517286AC800F61563 /* Icon.png */,
 				C4FD613717286ACD00F61563 /* Icon@2x.png */,
 				C4BBB7C016FD2D73003CA3F7 /* Default.png */,
@@ -139,6 +163,7 @@
 			children = (
 				74366EAC158AAE1000A17D8A /* twiz files */,
 				741203C415900A3C00820BE9 /* Assets */,
+				F5229049193EDBC700D0160A /* JASidePanels */,
 				74366EAD158AAE1000A17D8A /* Supporting Files */,
 				74366EA5158AAE0F00A17D8A /* Frameworks */,
 				74366EA3158AAE0F00A17D8A /* Products */,
@@ -228,6 +253,28 @@
 			name = XIB;
 			sourceTree = "<group>";
 		};
+		F5229049193EDBC700D0160A /* JASidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				F5229053193EDDF400D0160A /* JACenterViewController.h */,
+				F5229054193EDDF400D0160A /* JACenterViewController.m */,
+				F5229055193EDDF400D0160A /* JADebugViewController.h */,
+				F5229056193EDDF400D0160A /* JADebugViewController.m */,
+				F5229057193EDDF400D0160A /* JALeftViewController.h */,
+				F5229058193EDDF400D0160A /* JALeftViewController.m */,
+				F5229059193EDDF400D0160A /* JARightViewController.h */,
+				F522905A193EDDF400D0160A /* JARightViewController.m */,
+				F522905B193EDDF400D0160A /* JASidePanels-Info.plist */,
+				F522905C193EDDF400D0160A /* JASidePanels-Prefix.pch */,
+				F522904A193EDBC700D0160A /* JASidePanelController.h */,
+				F522904B193EDBC700D0160A /* JASidePanelController.m */,
+				F522904C193EDBC700D0160A /* UIViewController+JASidePanel.h */,
+				F522904D193EDBC700D0160A /* UIViewController+JASidePanel.m */,
+			);
+			name = JASidePanels;
+			path = LogInAndSignUpDemo/Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,8 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5229061193EDDF400D0160A /* JASidePanels-Info.plist in Resources */,
 				F5228FA71938F5D400D0160A /* MuseoSansRounded-100.otf in Resources */,
 				F5228FA81938F5D400D0160A /* MuseoSansRounded-300.otf in Resources */,
+				F5229048193ED5B400D0160A /* loginWithTwitterBtn.png in Resources */,
 				F5228FA91938F5D400D0160A /* MuseoSansRounded-500.otf in Resources */,
 				F5228FAA1938F5D400D0160A /* MuseoSansRounded-900.otf in Resources */,
 				74366EB1158AAE1000A17D8A /* InfoPlist.strings in Resources */,
@@ -303,9 +352,15 @@
 			files = (
 				F5228FAE193900DA00D0160A /* MyPlayViewController.m in Sources */,
 				74366EB3158AAE1000A17D8A /* main.m in Sources */,
+				F522904E193EDBC700D0160A /* JASidePanelController.m in Sources */,
+				F522905E193EDDF400D0160A /* JADebugViewController.m in Sources */,
 				74366EB7158AAE1000A17D8A /* AppDelegate.m in Sources */,
 				74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */,
 				74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */,
+				F522905D193EDDF400D0160A /* JACenterViewController.m in Sources */,
+				F522905F193EDDF400D0160A /* JALeftViewController.m in Sources */,
+				F522904F193EDBC700D0160A /* UIViewController+JASidePanel.m in Sources */,
+				F5229060193EDDF400D0160A /* JARightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
